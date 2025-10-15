@@ -4,7 +4,7 @@ import "./style.css";
 function PaginaInformativa() {
   return (
     <div className="info-container">
-      <h2 className="info-titulo">Bienvenido a las fotografias mejores tomadas</h2>
+      <h2 className="info-titulo">Bienvenido a las mejores fotografias tomadas</h2>
 
 <p className="info-descripcion">
   Prepárate para adentrarte en un universo visual infinito, donde cada imagen es una ventana a mundos desconocidos y paisajes sorprendentes.  

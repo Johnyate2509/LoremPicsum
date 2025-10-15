@@ -1,3 +1,82 @@
-.favoritos {
+.favoritos-container {
   padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.favoritos-titulo {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+/* Heredamos los estilos globales de Lista */
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.card {
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  aspect-ratio: 16/9;
+}
+
+.btn-fav {
+  background-color: #49525c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-fav:hover {
+  background-color: #27313d;
+  transform: scale(1.05);
+}
+
+.btn-fav.activo {
+  background-color: #e63946;
+}
+
+.mensaje-vacio {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2rem;
+  grid-column: 1 / -1;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .lista {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .lista {
+    grid-template-columns: 1fr;
+  }
 }
