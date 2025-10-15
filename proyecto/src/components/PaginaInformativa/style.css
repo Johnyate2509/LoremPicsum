@@ -1,0 +1,89 @@
+/* Contenedor principal */
+.info-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* Título principal */
+.info-titulo {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Descripción */
+.info-descripcion {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #f1f1f1; /* texto ligeramente gris claro para mejor lectura */
+  margin-bottom: 30px;
+  padding: 0 15px; /* Sangría interna para evitar que el texto se pegue a los bordes */
+}
+
+/* Enlace a GitHub */
+.info-link {
+  display: inline-block;
+  background-color: #49525c;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.info-link:hover {
+  background-color: #ffffff;
+}
+
+/* Autor */
+.info-autor {
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .info-container {
+    padding: 30px 20px;
+  }
+
+  .info-titulo {
+    font-size: 1.6rem;
+  }
+
+  .info-descripcion {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-container {
+    padding: 25px 15px;
+  }
+
+  .info-titulo {
+    font-size: 1.4rem;
+  }
+
+  .info-descripcion {
+    font-size: 0.95rem;
+  }
+
+  .info-link {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+}

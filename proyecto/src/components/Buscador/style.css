@@ -1,0 +1,69 @@
+.buscador {
+  padding: 20px;
+  text-align: center;
+}
+
+.buscador-controles {
+  margin-bottom: 20px;
+}
+
+.buscador-controles input {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.buscador-controles button {
+  padding: 8px 12px;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buscador-controles button:hover {
+  background: #0056b3;
+}
+
+.grid-imagenes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.card {
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card .info {
+  padding: 10px;
+}
+
+.card .info a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9em;
+}
+
+.card .info a:hover {
+  text-decoration: underline;
+}

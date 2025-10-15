@@ -1,0 +1,96 @@
+/* Contenedor principal del detalle */
+.detalle {
+  padding: 20px;
+}
+
+/* Título principal */
+.detalle-titulo {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+/* Grupo por fotógrafo */
+.grupo {
+  margin-bottom: 40px;
+}
+
+/* Nombre del fotógrafo */
+.nombre-fotografo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 15px 0;
+  text-align: left;
+}
+
+/* Mantiene la gramática existente */
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 10px 0;
+}
+
+/* Tarjeta de imagen */
+.card {
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen responsiva */
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  aspect-ratio: 16/9;
+}
+
+/* Botón dentro de las tarjetas */
+.btn-original {
+  background-color: #49525c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-original:hover {
+  background-color: #27313d;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .lista {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+
+  .nombre-fotografo {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .lista {
+    grid-template-columns: 1fr;
+  }
+
+  .detalle-titulo {
+    font-size: 1.5rem;
+  }
+}
